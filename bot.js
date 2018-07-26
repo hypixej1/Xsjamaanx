@@ -18,6 +18,13 @@ client.on("message", (message) => {
 
   }
 });
+
+client.on("message", (message) => {
+  if(message.content === "shit") {
+    message.channel.remove;
+  }
+});
+
 client.on('guildMemberAdd' , member => {               //You can Change The Name
   const channel = member.guild.channels.find('name', 'welcome');
   if (!channel) return;
