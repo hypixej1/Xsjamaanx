@@ -41,4 +41,4 @@ client.on('guildMemberAdd' , member => {               //You can Change The Name
 });
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN); 
