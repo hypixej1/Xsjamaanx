@@ -21,7 +21,7 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   if(message.content === "!info") {
-    message.channel.send("``VERSION: 0.0.2v \nCREATOR: GLANOP \nBOT CREATED ON: 26/07/2018``");
+    message.channel.send("```VERSION: 0.0.2v \nCREATOR: GLANOP \nBOT CREATED ON: 26/07/2018```");
 
   }
 });
