@@ -19,6 +19,21 @@ client.on("message", (message) => {
   }
 });
 
+client.on("message", (message) => {
+  if(message.content === "!info") {
+    message.channel.send("``**VERSION: 0.0.2v** n\**CREATOR: GLANOP** n\**BOT CREATED ON: 26/07/2018**``");
+
+  }
+});
+
+client.on("message", (message) => {
+  if(message.content === "!XsjamHelp") {
+    message.channel.send("Test");
+
+  }
+});
+
+
 client.on('guildMemberAdd' , member => {               //You can Change The Name
   const channel = member.guild.channels.find('name', 'welcome');
   if (!channel) return;
