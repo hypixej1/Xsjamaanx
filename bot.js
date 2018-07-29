@@ -28,7 +28,7 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   if(message.content === "!xhelp") {
-    message.channel.send("```HELP SECTION \n!info = This Shows all the info about the bot. \n!youtube = This shows Xsjamaanx's YouTube Channel.");
+    message.channel.send("```HELP SECTION \n!info = This Shows all the info about the bot. \n!youtube = This shows Xsjamaanx's YouTube Channel.```");
 
   }
 });
