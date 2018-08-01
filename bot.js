@@ -20,6 +20,13 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
+  if(message.content === "!twitter") {
+    message.channel.send("https://twitter.com/Xsjamaanx1");
+
+  }
+});
+
+client.on("message", (message) => {
   if(message.content === "!info") {
     message.channel.send("```VERSION: 0.0.2v \nCREATOR: GLANOP \nBOT CREATED ON: 26/07/2018 \nLAST UPDATED BY: TC6```");
 
@@ -28,7 +35,7 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   if(message.content === "!xhelp") {
-    message.channel.send("```HELP SECTION \n -\n!info = This Shows all the info about the bot. \n -\n!youtube = This shows Xsjamaanx's YouTube Channel.```");
+    message.channel.send("```HELP SECTION \n -\n!info = This Shows all the info about the bot. \n -\n!youtube = This shows Xsjamaanx's YouTube Channel. \n -\n!twitter = Xsjamaanx's Twitter Account```");
 
   }
 });
