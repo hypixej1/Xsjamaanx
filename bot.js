@@ -12,6 +12,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'shut up bot') {
+    	message.reply('No u!');
+  	}
+});
+
 client.on("message", (message) => {
   if(message.content === "!youtube") {
     message.channel.send("https://www.youtube.com/channel/UC-seWX5wYwk9pMm8v-ntV8g?disable_polymer=1");
