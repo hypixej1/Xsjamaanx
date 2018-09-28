@@ -18,6 +18,24 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '@Xsjamaanx#5047') {
+    	message.reply('Dont Tag him, he might be busy!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '@TC6#5825') {
+    	message.reply('Dont Tag him, he might be busy!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '@Zypeh#5321') {
+    	message.reply('Dont Tag him, he might be busy!');
+  	}
+});
+
 client.on("message", (message) => {
   if(message.content === "!youtube") {
     message.channel.send("https://www.youtube.com/channel/UC-seWX5wYwk9pMm8v-ntV8g?disable_polymer=1");
