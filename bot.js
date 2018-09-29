@@ -19,20 +19,20 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '@Xsjamaanx#5047') {
-    	message.reply('Dont Tag him, he might be busy!');
+    if (message.content === 'GlanOP is bad') {
+    	message.reply('Dont talk to my dad like that!');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === '@TC6#5825') {
-    	message.reply('Dont Tag him, he might be busy!');
+    if (message.content === 'Xsjamaanx is bad') {
+    	message.reply('Dont talk to my brother like that! >:(');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === '@Zypeh#5321') {
-    	message.reply('Dont Tag him, he might be busy!');
+    if (message.content === 'Zypeh is bad') {
+    	message.reply('Dont talk to my brother like that! >:(');
   	}
 });
 
