@@ -65,7 +65,7 @@ client.on("message", (message) => {
 });
 
 client.on('guildMemberAdd' , member => {               //You can Change The Name
-  const channel = member.guild.channels.find('name', 'welcome');
+  const channel = member.guild.channels.find('name', '👋welcome👋');
   if (!channel) return;
  channel.send(` **[WELCOME]** ${member} Welcome to Xsjamaanx Discord Server if you need any help just ask a staff member!`);
 });
@@ -74,6 +74,12 @@ client.on('guildMemberRemove' , member => {               //You can Change The N
   const channel = member.guild.channels.find('name', 'staff-bot');
   if (!channel) return;
  channel.send(` **[LEAVE LOGS]** ${member} Has left the server. (staff logs)`);
+});
+
+client.on('guildMemberAdd' , member => {               //You can Change The Name
+  const channel = member.guild.channels.find('name', 'staff-bot');
+  if (!channel) return;
+ channel.send(` **[JOIN LOGS]** ${member} Has joined the server. (staff logs)`);
 });
 
 // THIS  MUST  BE  THIS  WAY
