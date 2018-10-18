@@ -52,7 +52,7 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   if(message.content === "!info") { 
-    message.channel.send("```VERSION: 0.0.4v \nCREATOR: GLANOP \nBOT CREATED ON: 26/08/2018 \nLAST UPDATED BY: TC6```");
+    message.channel.send("```VERSION: 0.0.5v \nCREATOR: GLANOP \nBOT CREATED ON: 26/08/2018 \nLAST UPDATED BY: GLANOP```");
 
   }
 });
@@ -81,6 +81,13 @@ client.on('guildMemberAdd' , member => {               //You can Change The Name
   if (!channel) return;
  channel.send(` **[JOIN LOGS]** ${member} Has joined the server. (staff logs)`);
 });
+
+client.on('guildbans' , member => {               //You can Change The Name
+  const channel = member.guild.channels.find('name', 'staff-bot');
+  if (!channel) return;
+ channel.send(` **[BANNED]** ${member} Has been banned. (staff logs)`);
+});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN); 
