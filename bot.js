@@ -37,29 +37,29 @@ client.on('message', message => {
 });
 
 client.on("message", (message) => {
-  if(message.content === "!youtube") {
+  if(message.content === "xyoutube") {
     message.channel.send("https://www.youtube.com/channel/UC-seWX5wYwk9pMm8v-ntV8g?disable_polymer=1");
 
   }
 });
 
 client.on("message", (message) => {
-  if(message.content === "!twitter") {
+  if(message.content === "xtwitter") {
     message.channel.send("https://twitter.com/Xsjamaanx1");
 
   }
 });
 
 client.on("message", (message) => {
-  if(message.content === "!info") { 
+  if(message.content === "xinfo") { 
     message.channel.send("```VERSION: 0.0.5v \nCREATOR: GLANOP \nBOT CREATED ON: 26/08/2018 \nLAST UPDATED BY: GLANOP```");
 
   }
 });
 
 client.on("message", (message) => {
-  if(message.content === "!xhelp") {
-    message.channel.send("```HELP SECTION \n -\n!info = This Shows all the info about the bot. \n -\n!youtube = This shows Xsjamaanx's YouTube Channel. \n -\n!twitter = Xsjamaanx's Twitter Account```");
+  if(message.content === "xhelp") {
+    message.channel.send("```HELP SECTION \n -\nxinfo = This Shows all the info about the bot. \n -\nxyoutube = This shows Xsjamaanx's YouTube Channel. \n -\nxtwitter = Xsjamaanx's Twitter Account```");
 
   }
 });
@@ -82,7 +82,7 @@ client.on('guildMemberAdd' , member => {               //You can Change The Name
  channel.send(` **[JOIN LOGS]** ${member} Has joined the server. (staff logs)`);
 });
 
-client.on('guildbans' , member => {               //You can Change The Name
+client.on('GuildAddBan' , member => {               //You can Change The Name
   const channel = member.guild.channels.find('name', 'staff-bot');
   if (!channel) return;
  channel.send(` **[BANNED]** ${member} Has been banned. (staff logs)`);
