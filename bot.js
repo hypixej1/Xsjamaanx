@@ -24,6 +24,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === 'forgot that was a command') {
+    	message.reply('shut the fuck up!');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === 'Xsjamaanx is bad') {
     	message.reply('Dont talk to my brother like that! >:(');
   	}
