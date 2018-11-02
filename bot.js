@@ -87,6 +87,11 @@ client.on('GuildBanAdded' , member => {               //You can Change The Name
  channel.send(` **[BANNED]** ${member} Has been banned. (staff logs)`);
 });
 
+client.on('memberban' , member => {               //You can Change The Name
+  const channel = member.guild.channels.find('name', 'staff-bot');
+  if (!channel) return;
+ channel.send(` **[BANNED]** ${member} Has been banned from the server. (staff logs)`);
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN); 
