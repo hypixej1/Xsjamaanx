@@ -11,28 +11,11 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content === 'shut up bot') {
-    	message.reply('No u!');
-  	}
-});
 
-client.on('message', message => {
-    if (message.content === 'GlanOP is bad') {
-    	message.reply('Dont talk to my dad like that!');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'Xsjamaanx is bad') {
-    	message.reply('Dont talk to my brother like that! >:(');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'Zypeh is bad') {
-    	message.reply('Dont talk to my brother like that! >:(');
-  	}
+client.on('guildBanAdd' , member => {               //You can Change The Name
+  const channel = member.guild.channels.find('name', 'staff-bot');
+  if (!channel) return;
+ channel.send(` **[JOIN LOGS]** ${member} Has joined the server. (staff logs)`);
 });
 
 client.on("message", (message) => {
@@ -79,12 +62,6 @@ client.on('guildMemberAdd' , member => {               //You can Change The Name
   const channel = member.guild.channels.find('name', 'staff-bot');
   if (!channel) return;
  channel.send(` **[JOIN LOGS]** ${member} Has joined the server. (staff logs)`);
-});
-
-client.on('guildBanAdd' , member => {               //You can Change The Name
-  const channel = member.guild.channels.find('name', 'staff-bot');
-  if (!channel) return;
- channel.send(` **[BANNED]** ${member} Has been banned from the server. (staff logs)`);
 });
 
 // THIS  MUST  BE  THIS  WAY
