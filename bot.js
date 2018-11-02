@@ -81,13 +81,7 @@ client.on('guildMemberAdd' , member => {               //You can Change The Name
  channel.send(` **[JOIN LOGS]** ${member} Has joined the server. (staff logs)`);
 });
 
-client.on('kickGuildMember' , member => {               //You can Change The Name
-  const channel = member.guild.channels.find('name', 'staff-bot');
-  if (!channel) return;
- channel.send(` **[KICKED]** ${member} Has been kicked from the server! (staff logs)`);
-});
-
-client.on('banGuildMember' , member => {               //You can Change The Name
+client.on('guildBanAdd' , member => {               //You can Change The Name
   const channel = member.guild.channels.find('name', 'staff-bot');
   if (!channel) return;
  channel.send(` **[BANNED]** ${member} Has been banned from the server. (staff logs)`);
