@@ -27,7 +27,7 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   if(message.content === "xinfo") { 
-    message.channel.send("```VERSION: 0.0.5v \nCREATOR: GLANOP \nBOT CREATED ON: 26/08/2018 \nLAST UPDATED BY: GLANOP```");
+    message.channel.send("```VERSION: 0.0.5v \nCREATOR: GLANOP \nBOT CREATED ON: 26/08/2018 \nLAST UPDATED BY: TC6```");
 
   }
 });
@@ -42,7 +42,7 @@ client.on("message", (message) => {
 client.on('guildMemberAdd' , member => {               //You can Change The Name
   const channel = member.guild.channels.find('name', '👋welcome👋');
   if (!channel) return;
- channel.send(` **[WELCOME]** ${member} Welcome to Xsjamaanx Discord Server if you need any help just ask a staff member!`);
+ channel.send(` **[WELCOME]** ${member} 👋 Welcome to Xsjamaanx Discord Server if you need any help just ask a staff member! 👋`);
 });
 
 
@@ -52,6 +52,11 @@ client.on('guildMemberAdd' , member => {               //You can Change The Name
  channel.send(` **[JOIN LOGS]** ${member} Has joined the server. (staff logs)`);
 });
 
+client.on('guildMemberRemove' , member => {               //You can Change The Name
+  const channel = member.guild.channels.find('name', 'staff-bot');
+  if (!channel) return;
+ channel.send(` **[LEAVE LOGS]** ${member} Has Left the server. (staff logs)`);
+});
 
 
 // THIS  MUST  BE  THIS  WAY
